@@ -1,0 +1,116 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, black, grey);
+  color: white;
+  height: 90vh;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-banner {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  transition : background-image 0.5s ease-in-out;
+}
+
+.alert-container {
+  width: 100%;
+  text-align: center;
+  background: burlywood;
+  padding: 0.5rem;
+}
+
+.blinking-alert {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: white;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.ticker {
+  background: black;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  border-bottom: 2px solid grey;
+  padding: 0.5rem 0;
+}
+
+.headline {
+  display: inline-block;
+  animation: scroll-left 20s linear infinite;
+  font-size: 1.2rem;
+  color: yellow;
+  padding-left: 100%;
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.07);
+  padding: 2rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(35, 33, 33, 0.15);
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+textarea {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid white;
+  background: rgba(7, 7, 7, 0.15);
+  color: rgb(222, 216, 216);
+  resize: vertical;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+button {
+  background-color: yellow;
+  color: black;
+  font-size: 1.1rem;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: yellowgreen;
+}
+
+#result {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.hidden { display: none; }
