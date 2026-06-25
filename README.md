@@ -169,6 +169,6 @@ http://localhost:5000
 
 Computer Science Undergraduate passionate about Artificial Intelligence, Machine Learning, Cybersecurity, and Software Development.
 
-GitHub: https://github.com/your-github-username
+GitHub: https://github.com/mansi99100
 
-LinkedIn: https://linkedin.com/in/your-linkedin-profile
+LinkedIn: https://www.linkedin.com/in/mansirawat01/
